@@ -74,3 +74,15 @@
 ; applicative-order evaluation: the interpreter will attempt to evaluate (p) which will result in an infinite loop
 ; normal-order evalution: the interpreter will execute the if statement first and return 0 before (p) is evaluated
 
+
+; EXERCISE 1.6
+(define (new-if predicate then-clause else-clause)
+  (cond (predicate then-clause)
+        (else else-clause)))
+
+; can't be used in recursive method because applicative-order evaluation mean else clause is always evaluated, so 
+; the function will recurse infinitely
+
+
+; EXERCISE 1.7
+
