@@ -69,7 +69,7 @@
        0
        y))
 
-(test 0 (p))
+;(test 0 (p))
 
 ; applicative-order evaluation: the interpreter will attempt to evaluate (p) which will result in an infinite loop
 ; normal-order evalution: the interpreter will execute the if statement first and return 0 before (p) is evaluated
